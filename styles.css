@@ -1,0 +1,98 @@
+/* General styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #f5f7fa, #c3dfe8);
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #e31837;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Search section */
+#search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+#zipCode {
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+#getForecast {
+  padding: 10px 15px;
+  font-size: 1em;
+  color: white;
+  background-color: #e31837;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#getForecast:hover {
+  background-color: #b7152a;
+}
+
+/* Forecast cards */
+#forecast {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px;
+}
+
+.weather-card {
+  background-color: white;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: center;
+  width: 150px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.weather-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.weather-card img {
+  width: 80px;
+  height: 80px;
+}
+
+.weather-card h3 {
+  margin: 10px 0;
+  font-size: 1em;
+}
+
+.weather-card p {
+  margin: 5px 0;
+  font-size: 0.9em;
+  color: #555;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  font-size: 0.8em;
+  margin-top: 20px;
+}
